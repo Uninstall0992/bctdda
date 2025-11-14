@@ -257,7 +257,7 @@ clicks: 6
 glow: right
 ---
 
-# Nội dung cuộc họp
+# Các cuộc họp
 
 <div mt-6 />
 
@@ -274,9 +274,9 @@ glow: right
         <div i-carbon:location text-3xl mr-2 />
         <span font-bold>Địa điểm</span>
       <div>
-        <div text-sm font-medium>Sảnh I</div>
+        <div text-sm font-medium>Ngày 1/11: Sảnh I</div>
         <div text-xs opacity-70>Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Thành phố Hồ Chí Minh</div>
-        <div text-sm font-medium>Namoo Coffee</div>
+        <div text-sm font-medium>Ngày 13/11: Namoo Coffee</div>
         <div text-xs opacity-70>103 Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh</div>
       </div>
       </div>
@@ -290,13 +290,13 @@ glow: right
     >
       <div flex items-center>
         <div i-carbon:task text-red-300 text-xl mr-2 />
-        <span font-bold>Ngày tháng</span>
+        <span font-bold>Mục tiêu</span>
       </div>
     <div px-5 py-4 flex flex-col gap-2>
       <div
         v-for="(item, idx) in [
-          'Thảo luận để đưa ra được giải pháp cho những vấn đề trong buổi họp trước',
-          'Đưa ra ý tưởng để thực hiện bước chuẩn bị tiếp theo của đồ án',
+          'Chỉnh sửa kịch bản, phân chia vai diễn phù hợp.',
+          'Bàn về bối cảnh, timeline quay video đồ án kỹ năng mềm.',
         ]"
         :key="item"
         v-click="2 + idx"
@@ -320,8 +320,8 @@ glow: right
       rounded-lg p-4 h-full
     >
       <div flex items-center>
-        <div i-carbon:code mr-2 />
-        <span font-bold>Mục tiêu</span>
+        <div i-carbon:list-checked mr-2 />
+        <span font-bold>Nội dung</span>
       </div>
       <div mt-4 flex flex-col gap-2>
         <div
@@ -358,6 +358,13 @@ glow: right
     </div>
   </div>
 </div>
+
+---
+layout: 3-images
+imageLeft: '1.jpg'
+imageTopRight: '2.jpg'
+imageBottomRight: '3.jpg'
+---
 
 ---
 class: py-10
@@ -463,6 +470,8 @@ glowSeed: 100
 </div>
 
 ---
+clicks: 0
+---
 
 # Timeline
 
@@ -482,7 +491,6 @@ timeline
 
 ---
 class: py-10
-clicks: 5
 glow: left
 ---
 
@@ -580,3 +588,13 @@ glow: left
     </div>
   </div>
 </div>
+
+---
+layout: statement
+---
+
+# Cảm ơn thầy cô và các bạn
+
+<div class="absolute bottom-10">
+  <p text-align="center"> Biễu mẫu: Slidev - Anthony Fu & Taming Dependency Chaos for LLM in K8S - Kebe Liu</p>
+</div> 
