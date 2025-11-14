@@ -156,7 +156,7 @@ glowSeed: 205
 
 <div flex>
   <div
-    v-click="2" flex flex-col items-center transition duration-500 ease-in-out
+    v-click="1" flex flex-col items-center transition duration-500 ease-in-out
     :class="$clicks < 1 ? 'translate-y-20 opacity-0' : 'translate-y-0 opacity-100'"
   >
     <img src="/person/7.png" w-50 h-50 rounded-full object-cover mb-5>
@@ -180,7 +180,7 @@ glowSeed: 100
 ---
 
 # Vấn đề
-<span>Những vấn đề nhóm mong muốn giải quyết trong cuộc họp này</span>
+<span>Những vấn đề nhóm mong muốn giải quyết</span>
 
 <div mt-6 grid grid-cols-2 gap-6>
   <div
@@ -253,7 +253,6 @@ glowSeed: 100
 
 ---
 class: py-10
-clicks: 6
 glow: right
 ---
 
@@ -294,14 +293,13 @@ glow: right
       </div>
     <div px-5 py-4 flex flex-col gap-2>
       <div
-        v-for="(item, idx) in [
+        v-for="(item) in [
           'Chỉnh sửa kịch bản, phân chia vai diễn phù hợp.',
           'Bàn về bối cảnh, timeline quay video đồ án kỹ năng mềm.',
         ]"
         :key="item"
-        v-click="2 + idx"
+        v-click="1"
         flex items-center gap-2
-        :class="$clicks < (2 + idx) ? 'opacity-0 translate-x--10' : 'opacity-100 translate-x-0'"
         transition duration-300 ease-in-out
       >
         <div i-carbon:checkmark text-red-400 />
@@ -325,7 +323,7 @@ glow: right
       </div>
       <div mt-4 flex flex-col gap-2>
         <div
-          v-click="3"
+          v-click="2"
         >
     <div px-4 py-3 flex flex-col gap-2 h-full>
       <div bg="blue-900/30" rounded-lg p-3 flex flex-col gap-2>
@@ -373,7 +371,7 @@ glowSeed: 100
 
 # Kết quả
 
-<span>Những nội dung đã được thống nhất trong buổi thảo luận</span>
+<span>Những nội dung đã được thống nhất trong những buổi thảo luận</span>
 
 <div mt-6 />
 
@@ -469,8 +467,6 @@ glowSeed: 100
   </div>
 </div>
 
----
-clicks: 0
 ---
 
 # Timeline
