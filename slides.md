@@ -381,7 +381,7 @@ glowSeed: 100
 
 <div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
   <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
-    <div i-carbon:warning-alt text-amber-300 text-sm mr-2 />
+    <div i-carbon:notebook text-amber-300 text-sm mr-2 />
     <div font-semibold>
       Kịch bản
     </div>
@@ -410,7 +410,7 @@ glowSeed: 100
 
 <div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
   <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
-    <div i-carbon:download text-blue-300 text-sm mr-2 />
+    <div i-carbon:image text-blue-300 text-sm mr-2 />
     <div font-semibold>
       Bối cảnh
     </div>
@@ -434,7 +434,7 @@ glowSeed: 100
 
 <div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
   <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
-    <div i-carbon:data-check text-green-300 text-sm mr-2 />
+    <div i-carbon:screen text-green-300 text-sm mr-2 />
     <div font-semibold>
       Kỹ thuật 
     </div>
