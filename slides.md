@@ -5,7 +5,7 @@ theme: apple-basic
 # like them? see https://unsplash.com/collections/94734566/slidev
 image: 1.jpg
 # some information about your slides (markdown enabled)
-title: Bảng vẽ - bút vẽ
+title: Báo cáo tiến độ đồ án
 # apply UnoCSS classes to the current slide
 layout: intro-image
 # https://sli.dev/features/drawing
@@ -172,6 +172,8 @@ glowSeed: 205
   </div>
 </div>
 
+
+
 ---
 class: py-10
 glowSeed: 100
@@ -194,7 +196,7 @@ glowSeed: 100
       <div flex items-center gap-2 py-1>
         <div i-carbon:spell-check text-amber-300 text-xl />
         <div>
-          <div font-bold>Nội  dung</div>
+          <div font-bold>Nội dung</div>
           <div text-sm opacity-80>Kịch bản còn thô sơ</div>
         </div>
       </div>
@@ -249,6 +251,216 @@ glowSeed: 100
     </div>
 </div>
 
+---
+class: py-10
+clicks: 6
+glow: right
+---
+
+# Nội dung cuộc họp
+
+<div mt-6 />
+
+<div flex>
+  <div flex-1 pr-0>
+    <div
+      v-motion
+      :initial="{ opacity: 0, y: 50 }"
+      :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
+      border="2 solid purple-800" bg="purple-800/20"
+      rounded-lg p-4
+    >
+      <div flex items-center>
+        <div i-carbon:location text-3xl mr-2 />
+        <span font-bold>Địa điểm</span>
+      <div>
+        <div text-sm font-medium>Sảnh I</div>
+        <div text-xs opacity-70>Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Thành phố Hồ Chí Minh</div>
+        <div text-sm font-medium>Namoo Coffee</div>
+        <div text-xs opacity-70>103 Cao Thắng, phường Bàn Cờ, Thành phố Hồ Chí Minh</div>
+      </div>
+      </div>
+    </div>
+    <div
+      v-motion
+      :initial="{ opacity: 0, y: 50 }"
+      :enter="{ opacity: 1, y: 0, transition: { delay: 400 } }"
+      mt-4 border="2 solid red-800" bg="red-800/20"
+      rounded-lg p-4
+    >
+      <div flex items-center>
+        <div i-carbon:task text-red-300 text-xl mr-2 />
+        <span font-bold>Ngày tháng</span>
+      </div>
+    <div px-5 py-4 flex flex-col gap-2>
+      <div
+        v-for="(item, idx) in [
+          'Thảo luận để đưa ra được giải pháp cho những vấn đề trong buổi họp trước',
+          'Đưa ra ý tưởng để thực hiện bước chuẩn bị tiếp theo của đồ án',
+        ]"
+        :key="item"
+        v-click="2 + idx"
+        flex items-center gap-2
+        :class="$clicks < (2 + idx) ? 'opacity-0 translate-x--10' : 'opacity-100 translate-x-0'"
+        transition duration-300 ease-in-out
+      >
+        <div i-carbon:checkmark text-red-400 />
+        <span>{{item}}</span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div flex-1 pl-4>
+    <div
+      v-motion
+      :initial="{ opacity: 0, y: 50 }"
+      :enter="{ opacity: 1, y: 0, transition: { delay: 600 } }"
+      border="2 solid blue-800" bg="blue-800/20"
+      rounded-lg p-4 h-full
+    >
+      <div flex items-center>
+        <div i-carbon:code mr-2 />
+        <span font-bold>Mục tiêu</span>
+      </div>
+      <div mt-4 flex flex-col gap-2>
+        <div
+          v-click="3"
+        >
+    <div px-4 py-3 flex flex-col gap-2 h-full>
+      <div bg="blue-900/30" rounded-lg p-3 flex flex-col gap-2>
+        <div font-bold text-sm>Ngày 1/11</div>
+        <div flex items-center gap-2>
+          <div i-carbon:checkmark-outline text-blue-400 />
+          <span text-sm>Cải tổ nhóm - bầu lại nhóm trưởng, nhóm phó: Trần Kiến Quốc & Mai Trung Hiếu</span>
+        </div>
+        <div flex items-center gap-2>
+          <div i-carbon:checkmark-outline text-blue-400 />
+          <span text-sm>Bàn về khung nội dung video gồm: Hình thức & Nội dung kịch bản sơ bộ</span>
+        </div>
+      </div>
+    </div>
+    <div px-4 py-3 flex flex-col gap-2 h-full>
+      <div bg="blue-900/30" rounded-lg p-3 flex flex-col gap-2>
+        <div font-bold text-sm>Ngày 13/11</div>
+        <div flex items-center gap-2>
+          <div i-carbon:checkmark-outline text-blue-400 />
+          <span text-sm>Thảo luận để đưa ra được giải pháp cho những vấn đề trong buổi họp trước</span>
+        </div>
+        <div flex items-center gap-2>
+          <div i-carbon:checkmark-outline text-blue-400 />
+          <span text-sm>Đưa ra ý tưởng để thực hiện bước chuẩn bị tiếp theo của đồ án</span>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+class: py-10
+glowSeed: 100
+---
+
+# Kết quả
+
+<span>Những nội dung đã được thống nhất trong buổi thảo luận</span>
+
+<div mt-6 />
+
+<div grid grid-cols-3 gap-3 h-75>
+
+<v-clicks>
+
+<div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
+  <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
+    <div i-carbon:warning-alt text-amber-300 text-sm mr-2 />
+    <div font-semibold>
+      Kịch bản
+    </div>
+  </div>
+  <div px-4 py-3>
+    <div flex flex-col gap-3>
+      <div>
+        <div text-sm font-medium>Chủ đề</div>
+        <div text-xs opacity-70>Gender Equality (Bình đẳng giới) & Domestic Violence (Bạo lực gia đình)</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Thời lượng tổng</div>
+        <div text-xs opacity-70>~8 phút (Tùy chỉnh dựa vào tình hình thực tế)</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Phân đoạn chính & Số lượng cảnh quay</div>
+        <div text-xs opacity-70>4 (sequences), 8 (scenes)</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Tổng diễn viên</div>
+        <div text-xs opacity-70>2 vai chính (1 nam/nữ) và 6 vai phụ</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
+  <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
+    <div i-carbon:download text-blue-300 text-sm mr-2 />
+    <div font-semibold>
+      Bối cảnh
+    </div>
+  </div>
+  <div px-4 py-3>
+    <div flex flex-col gap-3>
+      <div>
+        <div text-sm font-medium>Sân trường</div>
+        <div text-xs opacity-70>Đại học Khoa Học Tự Nhiên (cơ sở 1)
+        </div>
+        <div text-sm font-medium>Studio</div>
+        <div text-xs opacity-70>854 Tạ Quang Bửu,  phường Bình Đông, Thành phố Hồ Chí Minh
+        </div>
+        <div text-sm font-medium>Cafe</div>
+        <div text-xs opacity-70>Gần studio
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div border="2 solid white/5" rounded-lg overflow-hidden bg="white/5" backdrop-blur-sm h-full>
+  <div flex items-center bg="white/10" backdrop-blur px-3 py-2 rounded-md>
+    <div i-carbon:data-check text-green-300 text-sm mr-2 />
+    <div font-semibold>
+      Kỹ thuật 
+    </div>
+  </div>
+  <div px-4 py-3>
+    <div flex flex-col gap-3>
+      <div>
+        <div text-sm font-medium>Âm thanh</div>
+        <div text-xs opacity-70>Davinci Resolve</div>
+      </div>
+      <div>
+        <div text-sm font-medium>Video</div>
+        <div text-xs opacity-70>Capcut</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</v-clicks>
+
+</div>
+
+<div v-click mt-6 flex justify-center>
+  <div
+    border="2 solid white/5" bg="white/5" backdrop-blur-sm
+    rounded-lg px-6 py-3 flex items-center gap-3
+  >
+    <div i-carbon:idea text-yellow-300 text-2xl />
+    <span text-lg>Chi phí: Dự kiến 1,5 triệu tiền thuê studio</span>
+  </div>
+</div>
 
 ---
 
