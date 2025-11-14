@@ -488,6 +488,7 @@ timeline
 ---
 class: py-10
 glow: left
+clicks: 5
 ---
 
 # Kế hoạch
