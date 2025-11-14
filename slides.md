@@ -3,7 +3,7 @@
 theme: apple-basic
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-image: "/image/1.jpg"
+image: "/public/1.jpg"
 # some information about your slides (markdown enabled)
 title: Báo cáo tiến độ đồ án
 # apply UnoCSS classes to the current slide
@@ -359,9 +359,9 @@ glow: right
 
 ---
 layout: 3-images
-imageLeft: "/image/1.jpg"
-imageTopRight: "/image/2.jpg"
-imageBottomRight: "/image/3.jpg"
+imageLeft: "/public/1.jpg"
+imageTopRight: "/public/2.jpg"
+imageBottomRight: "/public/3.jpg"
 ---
 
 ---
