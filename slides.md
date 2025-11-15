@@ -123,8 +123,7 @@ glowSeed: 205
     <span font-semibold text-2xl>Hiếu Anh Thư</span>
     <div items-center>
       <div>
-        <span class="opacity-70">Nữ chính</span>
-        <span class="opacity-70">Kịch bản</span>
+        <span class="opacity-70">Nữ chính & Kịch bản</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127240</span>
@@ -165,7 +164,6 @@ glowSeed: 205
     <div items-center>
       <div>
         <span class="opacity-70">Sếp nam chính</span>
-        <span class="opacity-70">Edit</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127542</span>
