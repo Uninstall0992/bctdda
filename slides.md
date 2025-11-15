@@ -124,6 +124,7 @@ glowSeed: 205
     <div items-center>
       <div>
         <span class="opacity-70">Nữ chính</span>
+        <span class="opacity-70">Kịch bản</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127240</span>
@@ -164,9 +165,25 @@ glowSeed: 205
     <div items-center>
       <div>
         <span class="opacity-70">Sếp nam chính</span>
+        <span class="opacity-70">Edit</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127542</span>
+      </div>
+    </div>
+  </div>
+  <div
+    v-click="2" flex flex-col items-center transition duration-500 ease-in-out
+    :class="$clicks < 2 ? 'translate-y-20 opacity-0' : 'translate-y-0 opacity-100'"
+  >
+    <img src="/person/8.png" w-50 h-50 rounded-full object-cover mb-5>
+    <span font-semibold text-2xl>Trương Hồng Minh</span>
+    <div items-center>
+      <div>
+        <span class="opacity-70">Khóc thuê</span>
+      </div>
+      <div text-sm flex items-center justify-center gap-2 mt-4>
+        <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127425</span>
       </div>
     </div>
   </div>
