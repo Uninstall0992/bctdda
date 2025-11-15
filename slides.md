@@ -51,7 +51,7 @@ glowSeed: 205
     <span font-semibold text-2xl>Nguyễn Khải Toàn</span>
     <div items-center>
       <div>
-        <span class="opacity-70">Thành viên</span>
+        <span class="opacity-70">Truyền hình viên</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127158</span>
@@ -67,7 +67,7 @@ glowSeed: 205
     <span font-semibold text-2xl>Nguyễn Quốc Khánh</span>
     <div items-center>
       <div>
-        <span class="opacity-70">Thành viên</span>
+        <span class="opacity-70">Nam chính</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127076</span>
@@ -83,7 +83,7 @@ glowSeed: 205
     <span font-semibold text-2xl>Mai Trung Hiếu</span>
     <div flex-col items-center>
       <div>
-        <span class="opacity-70">Thành viên</span>
+        <span class="opacity-70">Phục vụ cafe</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127329</span>
@@ -107,7 +107,7 @@ glowSeed: 205
     <span font-semibold text-2xl >Trần Kiến Quốc</span>
     <div items-center>
       <div>
-        <span class="opacity-70">Nhóm trưởng</span>
+        <span class="opacity-70">Bạn thân nữ chính</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127486</span>
@@ -123,7 +123,7 @@ glowSeed: 205
     <span font-semibold text-2xl>Hiếu Anh Thư</span>
     <div items-center>
       <div>
-        <span class="opacity-70">Thành viên</span>
+        <span class="opacity-70">Nữ chính</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127240</span>
@@ -139,7 +139,7 @@ glowSeed: 205
     <span font-semibold text-2xl>Võ Trần Nhật Hạ</span>
     <div flex-col items-center>
       <div>
-        <span class="opacity-70">Thành viên</span>
+        <span class="opacity-70">Bạn thân nam chính</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127043</span>
@@ -163,7 +163,7 @@ glowSeed: 205
     <span font-semibold text-2xl>Đàm Anh Tuấn</span>
     <div items-center>
       <div>
-        <span class="opacity-70">Thành viên</span>
+        <span class="opacity-70">Sếp nam chính</span>
       </div>
       <div text-sm flex items-center justify-center gap-2 mt-4>
         <div i-ri:bookmark-fill /><span underline decoration-dashed font-mono decoration-zinc-300>25127542</span>
