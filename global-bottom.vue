@@ -146,6 +146,7 @@ function usePloy(number = 16) {
 const poly1 = usePloy(10)
 const poly2 = usePloy(6)
 const poly3 = usePloy(3)
+const poly4 = usePloy(8)
 const date = new Date().toLocaleDateString('vi-VN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 </script>
 
@@ -153,22 +154,19 @@ const date = new Date().toLocaleDateString('vi-VN', { weekday: 'long', year: 'nu
   <div>
     <div class="bg transform-gpu overflow-hidden pointer-events-none"
       :style="{ filter: `blur(70px) hue-rotate(${hue}deg)` }" aria-hidden="true">
-      <div class="clip bg-gradient-to-r from-[#18549a] to-[#12238b]"
+      <div class="clip bg-gradient-to-r from-[#ED2224] to-[#C00A0C]"
         :style="{ 'clip-path': `polygon(${poly1})`, 'opacity': opacity }" />
-      <div class="clip bg-gradient-to-l from-[#18549a] to-[#12238b]"
+      <div class="clip bg-gradient-to-l from-[#E7E471] to-[#BDBB59]"
         :style="{ 'clip-path': `polygon(${poly2})`, 'opacity': opacity }" />
-      <div class="clip bg-gradient-to-t from-[#01b6d1] to-[#aaf7ff]"
-        :style="{ 'clip-path': `polygon(${poly3})`, 'opacity': 0.2 }" />
+      <div class="clip bg-gradient-to-t from-[#08509F] to-[#063A74]"
+        :style="{ 'clip-path': `polygon(${poly3})`, 'opacity': opacity }" />
+      <div class="clip bg-gradient-to-b from-[#F1F0ED] to-[#D4D3D0]"
+        :style="{ 'clip-path': `polygon(${poly4})`, 'opacity': opacity }" />
     </div>
   </div>
-  <footer class="absolute bottom-0 left-0 right-0 p-2 text-center">{{ date }}</footer>
-  <footer class="absolute bottom-0 right-0 p-2">{{ $page }}</footer>
-  <footer class="absolute bottom-0 left-0 right-0 p-2">8 con báo Độc Nhất Vô Nhị lên đỉnh Olympius</footer>
-
-
 </template>
 
-<style scoped>
+<style>
 .bg,
 .clip {
   transition: all 2.5s ease;
@@ -189,5 +187,27 @@ const date = new Date().toLocaleDateString('vi-VN', { weekday: 'long', year: 'nu
 
 .light .clip {
   opacity: 1 !important;
+}
+
+.liquid-glass {
+  position: relative;
+  z-index: 1;
+}
+
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: -1;
 }
 </style>

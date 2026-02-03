@@ -17,9 +17,10 @@ transition: slide-left
 mdc: true
 # duration of the presentation
 preload: true
+
 ---
 
-<div class="absolute top-10" bg="black op-50">
+<div class="absolute top-10">
   <span class="font-700">
     Nhóm 1 - 8 con báo Độc Nhất Vô Nhị lên đỉnh Olympius
   </span>
@@ -27,8 +28,8 @@ preload: true
 
 
 <div class="absolute bottom-10">
-  <h1 bg="black op-50" >Báo cáo tiến độ đồ án</h1>
-  <p bg="black op-50" text-align="center"> Lần 1 </p>
+  <h1>Báo cáo tiến độ đồ án</h1>
+  <p text-align="center"> Lần 1 </p>
 </div>
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -46,6 +47,7 @@ glowSeed: 205
   <div
     v-click="1" flex flex-col items-center transition duration-500 ease-in-out
     :class="$clicks < 1 ? 'translate-y-20 opacity-0' : 'translate-y-0 opacity-100'"
+    class="liquid-glass"
   >
     <img src="/person/1.png" w-50 h-50 rounded-full object-cover mb-5>
     <span font-semibold text-2xl>Nguyễn Khải Toàn</span>
@@ -486,7 +488,7 @@ glowSeed: 100
 
 # Timeline
 
-```mermaid 
+<code class="language-mermaid"> 
 timeline
     section Quay video 
     15/11/2025  : Lorem
@@ -498,7 +500,7 @@ timeline
     13/12/2025 : Lorem
     section Hoàn thiện đồ án 
     20/12/2025 : Lorem
-```
+</code>
 
 ---
 class: py-10
@@ -590,7 +592,8 @@ clicks: 5
     <div relative>
       <div
         border="2 solid green-800" bg="green-800/20"
-        rounded-lg p-4 w-full>
+        rounded-lg p-4 w-full
+        >
         <div text-center font-bold text-xl mb-3>Lấy ý kiến</div>
           <div flex items-center gap-2>
             <div text-green-400 />
@@ -609,4 +612,4 @@ layout: statement
 
 <div class="absolute bottom-10">
   <p text-align="center"> Biễu mẫu: Slidev - Anthony Fu & Taming Dependency Chaos for LLM in K8S - Kebe Liu</p>
-</div> 
+</div>
